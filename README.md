@@ -1,4 +1,4 @@
-# String format function of ODEs
+## Ordinary Differential Equations String Function (odesf)
 This package provides a simple function - transform a list of ODEs in string format into a string of a function in Python/C++.
 
 Examples are as follows.
