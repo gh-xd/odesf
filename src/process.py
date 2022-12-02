@@ -1,5 +1,12 @@
 import re
+import types
 from math import *
+
+def __func_from_string(func_str):
+    module_code = compile(func_str, '', 'exec')
+    function_code = [c for c in module_code.co_consts if isinstance(c, types.CodeType)][0]
+    func = types.FunctionType(function_code, globals())
+    return func
 
 def __process_const_str(co_ls):
     

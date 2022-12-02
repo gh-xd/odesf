@@ -9,7 +9,7 @@ To transform a list of ODE strings into function string format:
 
 - the left hand side must be written with derivitive form `d()/d()`
 ```python
-from sfode import eq_to_pyfunc_string
+from odesf import eq_to_pyfunc_string
 
 stiff_equation = ['dy/dt = z + t',
                   'dz/dt = -100 * y * t']
@@ -27,7 +27,7 @@ If constants exist, a list of constant equations must be passed over:
 
 - The constant variable name at the left hand side must be the same as in ODE strings
 ```python
-from sfode import eq_to_pyfunc_string
+from odesf import eq_to_pyfunc_string
 
 lorenz_equation_strs = ['dx/dt = sigma * (y - x)',
                         'dy/dt = rho * x - y - x * z',
@@ -55,7 +55,7 @@ Unlike for python, the result is a tuple:
 - function head string in `.h` format
 
 ```python
-from sfode import eq_to_cfunc_string
+from odesf import eq_to_cfunc_string
 
 stiff_equation = ['dy/dt = z + t',
                   'dz/dt = -100 * y * t']

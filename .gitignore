@@ -4,4 +4,4 @@ build/
 # dist directory
 dist/
 
-src/sfode.egg-info/
+src/odesf.egg-info/

@@ -4,11 +4,11 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name = "sfode",
-    version = "0.0.1",
+    name = "odesf",
+    version = "0.0.4",
     author = "Xiaodu Hu",
     author_email= "xiaodu.hu@outlook.com",
-    description = "String Function of Ordinary Defferential Equations transformation.",
+    description = "Ordinary Differential Equations String Function generator.",
     long_description = long_description,
     long_description_content_type = "text/markdown",
     keywords = ['python', 'ode', 'string', 'function'],
@@ -22,7 +22,7 @@ setuptools.setup(
         "Operating System :: MacOS"
     ],
     package_dir={'':'src'},
-    # py_modules=["_cpp", "_py"],
+    py_modules=["odesf", "process"],
     packages = setuptools.find_packages('src'),
 )
 
