@@ -1,0 +1,7 @@
+# build directory
+build/
+
+# dist directory
+dist/
+
+src/sfode.egg-info/
